@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00244A;
+            color: #CAD3D7;
+        }
+
+        header {
+            background-color: #00244A;
+            color: white;
+            display: flex;
+            justify-content: center; /* Align everything in the center horizontally */
+            align-items: center; /* Align vertically */
+            padding: 1em 0;
+            flex-direction: column; /* Stack the logo and nav vertically */
+        }
+
+        header img {
+            height: 60px;
+            width: auto;
+            margin-bottom: 15px; /* Add space between the logo and navigation */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center; /* Center align the navigation items */
+            gap: 10px; /* Space between nav items */
+        }
+
+        nav a {
+            color: #CAD3D7;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #66B2FF;
+        }
+
+        h2 {
+            color: #66B2FF;
+            text-align: center;
+        }
+
+        /* Portfolio Images Section */
+        .portfolio-gallery {
+            display: flex;
+            justify-content: space-around; /* Evenly space images */
+            gap: 20px; /* Space between images */
+            margin-top: 20px;
+        }
+
+        .portfolio-gallery img {
+            width: 30%; /* Set each image to take up about 30% of the width */
+            height: auto; /* Maintain image aspect ratio */
+            object-fit: contain; /* Make sure images are contained within their boxes */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #00244A;
+            color: #CAD3D7;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo Added Here -->
+        <img src="images/KevinLa_KLlogo.svg" alt="Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Portfolio Gallery -->
+    
+    <div class="portfolio-gallery">
+        <img src="images/KevinLa_JACplayoffs.png" alt="John Abbott College Football">
+        <img src="images/KevinLa_PizzaBox.jpg" alt="Pizza Brand Mockup">
+        <img src="images/KevinLa_Hangtags.jpg" alt="Outdoor Clothing Brand Mockup">
+    </div>
+
+    <footer>
+        &copy; 2024 Kevin La. All rights reserved.
+    </footer>
+</body>
+</html>
